@@ -17,6 +17,7 @@ exports.subtract = (req, res) => {
   }
   res.status(200).send({ result: subtracted });
 };
+
 exports.multiply = (req, res) => {
   const { a, b } = req.body;
   if (!a || !b) {
