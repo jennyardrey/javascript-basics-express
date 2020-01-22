@@ -1,25 +1,25 @@
 const add = (a, b) => {
-return a + b;
+  return a + b;
 };
 
 const subtract = (a, b) => {
-return a - b;
+  return a - b;
 };
 
 const multiply = (a, b) => {
-return a * b;
+  return a * b;
 };
 
 const divide = (a, b) => {
-return a / b;
+  return a / b;
 };
 
 const power = (a, b) => {
-return a ** b;
+  return a ** b;
 };
 
 const round = a => {
-return Math.round(a);
+  return Math.round(a);
 };
 
 const roundUp = a => {
@@ -35,11 +35,11 @@ const absolute = a => {
 };
 
 const quotient = (a, b) => {
-  return parseInt(a/b);
+  return parseInt(a / b);
 };
 
 const remainder = (a, b) => {
-  return a%b;
+  return a % b;
 };
 
 module.exports = {
@@ -53,5 +53,5 @@ module.exports = {
   roundDown,
   absolute,
   quotient,
-  remainder
+  remainder,
 };
