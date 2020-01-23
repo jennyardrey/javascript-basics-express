@@ -8,6 +8,7 @@ exports.add = (req, res) => {
     ? res.sendStatus(400)
     : res.status(200).json({ result: added });
 };
+// eslint-disable-next-line consistent-return
 exports.subtract = (req, res) => {
   const num1 = req.params.number1;
   const num2 = req.params.number2;
@@ -18,6 +19,7 @@ exports.subtract = (req, res) => {
   res.status(200).send({ result: subtracted });
 };
 
+// eslint-disable-next-line consistent-return
 exports.multiply = (req, res) => {
   const { a, b } = req.body;
   if (!a || !b) {
@@ -29,6 +31,7 @@ exports.multiply = (req, res) => {
   res.status(200).json({ result: multiply(req.body.a, req.body.b) });
 };
 
+// eslint-disable-next-line consistent-return
 exports.divide = (req, res) => {
   const { a, b } = req.body;
   // console.log(a);
@@ -51,6 +54,7 @@ exports.divide = (req, res) => {
   }
   res.status(200).json({ result: divide(a, b) });
 };
+// eslint-disable-next-line consistent-return
 exports.remainder = (req, res) => {
   const { a, b } = req.body;
 
